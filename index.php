@@ -8,6 +8,12 @@ if (!isset($_SESSION['username'])) {
     exit;
 }
 
+// Proteksi Halaman: Pastikan user memiliki hak akses sebagai dosen
+if ($_SESSION['level'] !== 'Dosen') {
+    header("Location: login.php");
+    exit;
+}
+
 $username_user = $_SESSION['username'];
 $level_user = $_SESSION['level'];
 ?>
