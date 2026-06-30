@@ -3,7 +3,7 @@
 $host = "localhost"; // Jika kamu menggunakan Docker, ganti "localhost" menjadi "db"
 $user = "root";      // Username default MySQL di XAMPP/Laragon biasanya "root"
 $pass = "";          // Password default MySQL di XAMPP/Laragon biasanya kosong
-$db   = "db_perkuliahan_digital"; // Nama database relasional yang sudah kita buat
+$db   = "jadwalmatkul"; // Nama database relasional yang sudah kita buat
 
 // Membuat koneksi ke database MySQL
 $koneksi = mysqli_connect($host, $user, $pass, $db);
